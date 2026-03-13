@@ -11,7 +11,7 @@
 score_UCLA <- function(df, keep_items = F) {
   
   # Identify which columns are UCLA responses
-  UCLA_Cols <- grep("loneliness_", colnames(df))
+  UCLA_Cols <- grep("UCLA_", colnames(df))
   
   # Assign a Numeric Value for each UCLA Response
   for (i in UCLA_Cols){

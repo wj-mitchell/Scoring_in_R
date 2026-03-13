@@ -11,7 +11,7 @@
 score_IUS <- function(df, keep_items = F) {
   
   # Identify which columns are IUS responses
-  IUS_Cols <- match(paste0("IUS-SF_", 1:12), colnames(df))
+  IUS_Cols <- grep("^IUS-SF_", colnames(df))
   
   # Assign a Numeric Value for each IUS Responses
   for (i in IUS_Cols){

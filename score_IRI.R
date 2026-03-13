@@ -21,7 +21,7 @@
 score_IRI <- function(df, keep_items = F) {
   
   # Identify which columns are IRI responses
-  IRI_Cols <- match(paste0("IRI_", 1:28), colnames(df))
+  IRI_Cols <- grep("^IRI_", colnames(df))
   
   # Assign a Numeric Value for each IRI Response
   for (i in IRI_Cols){
